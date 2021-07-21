@@ -19,7 +19,10 @@ h1, h2, h3 {
   .pc_headimg01, .pc_headimg02, .pc_img01, .pc_img02, .pc_img03, .pc_img04, .pc_img05, .pc_img06, .pc_img07, .pc_img08, .pc_img09, .pc_img10, .pc_img11, .pc_img12, .pc_img13, .pc_img14, .pc_img15, .pc_img16, .pc_img17, .pc_img18, .pc_img19, .pc_img20, .pc_img21, .pc_img22, .pc_img23, .pc_img24, .pc_img25, .pc_img26, .pc_img27, .pc_img28, .pc_img29, .pc_img30, .pc_img31, .pc_img32, .pc_img33, .pc_img34, .pc_img35 {
     display: none;
   }
-  .headerinner {
+  .pcimg{
+    display: none;
+  }
+  /* .headerinner {
     overflow: hidden;
     position: relative;
     margin: 100px auto 0;
@@ -67,7 +70,7 @@ h1, h2, h3 {
     text-align: center;
     margin: 95px auto 0;
     font-feature-settings: "palt" 1;
-  }
+  } */
   h1, h2, h3 {
     width: 90%;
   }
@@ -80,10 +83,13 @@ h1, h2, h3 {
   .sp_headimg, .sp_headimg01, .sp_headimg02, .sp_img01, .sp_img02, .sp_img03, .sp_img04, .sp_img05, .sp_img06, .sp_img07, .sp_img08, .sp_img09, .sp_img10, .sp_img11, .sp_img12, .sp_img13, .sp_img14, .sp_img15, .sp_img16, .sp_img17, .sp_img18, .sp_img19, .sp_img20, .sp_img21, .sp_img22, .sp_img23, .sp_img24, .sp_img25, .sp_img26, .sp_img27, .sp_img28, .sp_img29, .sp_img30, .sp_img31, .sp_img32, .sp_img33, .sp_img34, .sp_img35 {
     display: none;
   }
+  .spimg{
+    display: none;
+  }
   .spbr {
     display: none;
   }
-  .headerinner p {
+  /* .headerinner p {
     font-size: 70px;
     font-weight: 400;
     text-decoration: underline;
@@ -139,7 +145,7 @@ h1, h2, h3 {
     position: absolute;
     top: 35%;
     right: 17%;
-  }
+  } */
 }
 
 /* /header */
