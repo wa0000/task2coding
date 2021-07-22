@@ -188,6 +188,9 @@ html {
 }
 
 @media screen and (min-width:768px) {
+  body {
+    margin: 0 auto;
+  }
   .section_model {
     width: 80%;
     margin: 100px auto 0;
@@ -221,7 +224,7 @@ html {
     top: 0;
     right: 0;
   }
-  .tallmidasi,.shortmidasi {
+  .tallmidasi, .shortmidasi {
     font-size: 42px;
     border-bottom: #000 solid 2px;
   }
@@ -233,7 +236,7 @@ html {
     text-align: left;
   }
   .slidemidasi_short .size_short {
-    font-size: 20px;
+    font-size: 26px;
     text-align: right;
   }
   .setumei {
@@ -254,3 +257,22 @@ html {
 }
 
 /* /section_model */
+
+/* 調整用 */
+
+@media screen and (max-width:767px) {
+.spimg {
+    margin-top: 30px;
+  }
+  .section2 .secp {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .section2 .secp {
+    margin-top: 40px;
+  }
+}
+
+/* /調整用 */
