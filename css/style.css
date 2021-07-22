@@ -182,50 +182,73 @@ html {
     margin: 0 auto;
     width: 100%;
   }
-  .short{
+  .short {
     margin-top: 70px;
   }
 }
 
 @media screen and (min-width:768px) {
-  .sec_tall {
-    position: relative;
+  .section_model {
+    width: 80%;
+    margin: 100px auto 0;
+    display: flex;
+    max-width: 1360px;
+    justify-content: space-between;
+  }
+  .tall, .short {
     width: 45%;
   }
-  .pc_img04, .pc_img05 {
-    width: 100%;
-    height: auto;
+  .modelimg_tall, .modelimg_short {
+    overflow: hidden;
+    position: relative;
   }
-  .slidemidasi_1 {
+  .modelimg_tall img, .modelimg_short img {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .modelimg_tall, .modelimg_short {
+    position: relative;
+  }
+  .slidemidasi_tall {
     position: absolute;
-    width: 180px;
+    width: 150px;
     top: 0;
     left: 0;
   }
-  .tallmidasi {
-    font-size: 50px;
+  .slidemidasi_short {
+    position: absolute;
+    width: 170px;
+    top: 0;
+    right: 0;
+  }
+  .tallmidasi,.shortmidasi {
+    font-size: 42px;
     border-bottom: #000 solid 2px;
   }
-  .slidemidasi_1 .size {
-    font-size: 30px;
-    text-align: left;
-    text-indent: 10px;
-  }
   .cm {
-    font-size: 30px;
+    font-size: 26px;
+  }
+  .slidemidasi_tall .size {
+    font-size: 26px;
+    text-align: left;
+  }
+  .slidemidasi_short .size_short {
+    font-size: 20px;
+    text-align: right;
   }
   .setumei {
-    font-size: 22px;
+    font-size: 18px;
     letter-spacing: 0, 12em;
     font-feature-settings: "palt" 1;
   }
   .price {
     margin-top: 40px;
     text-align: left;
+    line-height: 2;
   }
   .price span {
     border-bottom: #000 solid 1px;
-    font-size: 19px;
+    font-size: 16px;
     margin-right: 10px;
   }
 }
