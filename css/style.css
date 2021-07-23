@@ -65,6 +65,9 @@ html {
     text-align: center;
     margin: 80px auto 0;
   }
+  .pchead {
+    margin-top: 300px;
+  }
 }
 
 /* /header */
@@ -86,6 +89,7 @@ html {
   }
   .sech1 {
     font-size: 28px;
+    letter-spacing: 0.06em;
   }
 }
 
@@ -99,6 +103,9 @@ html {
   }
   .sech1 {
     font-size: 35px;
+    font-weight: 300;
+    letter-spacing: 0.06em;
+    font-feature-settings: "palt" 1;
   }
   .section_midasi img {
     margin-top: 20px;
@@ -106,6 +113,8 @@ html {
   .secp {
     font-size: 18px;
     letter-spacing: 0.12em;
+    line-height: 2;
+    font-feature-settings: "palt" 1;
   }
 }
 
@@ -241,8 +250,9 @@ html {
   }
   .setumei {
     font-size: 18px;
-    letter-spacing: 0, 12em;
+    letter-spacing: 0.12em;
     font-feature-settings: "palt" 1;
+    line-height: 2;
   }
   .price {
     margin-top: 40px;
@@ -261,16 +271,25 @@ html {
 /* 調整用 */
 
 @media screen and (max-width:767px) {
-.spimg {
-    margin-top: 30px;
+  .sp_img08 {
+    margin-top: 20px;
   }
   .section2 .secp {
-    margin-top: 30px;
+    margin-top: 20px;
+  }
+  .sp_img16 {
+    margin-top: 20px;
+  }
+  .section4 .secp {
+    margin-top: 20px;
   }
 }
 
 @media screen and (min-width:768px) {
   .section2 .secp {
+    margin-top: 40px;
+  }
+  .section4 .secp {
     margin-top: 40px;
   }
 }
