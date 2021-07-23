@@ -347,7 +347,7 @@ body {
 @media screen and (max-width:767px) {
   .allitemcheck {
     background-color: #fff;
-    margin: 100px auto 0;
+    margin: 100px auto 370px;
     display: block;
     font-weight: 300;
     width: 90%;
