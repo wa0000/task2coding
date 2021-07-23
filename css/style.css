@@ -11,16 +11,88 @@ h1, h2, h3 {
   font-family: 'Roboto Condensed', sans-serif;
 }
 
-body {
-  max-width: 1360px;
-  font-size: 1.6rem;
+html {
+  font-size: 16px;
 }
 
-html {
-  font-size: 62.5%;
+body {
+  max-width: 1360px;
+  min-width: 320px;
+  font-size: 1.6em;
+}
+
+.f16px {
+  font-size: 1.6vw;
+}
+
+.f18px {
+  font-size: 1.8vw;
+}
+.f24px{
+  font-size: 2.4vw;
+}
+.f26px {
+  font-size: 2.6vw;
+}
+.f32px{
+  font-size: 3.2vw;
+}
+.f42px {
+  font-size: 4.2vw;
+}
+
+.f45px {
+  font-size: 4.5vw;
 }
 
 /* メトリクスfont-feature-settings: "palt" 1; */
+
+/* フォントサイズ調整用メディアクエリ */
+
+/* pc用 */
+
+@media screen and (min-width:1000px) {
+  .f16px {
+    font-size: 16px;
+  }
+  .f18px {
+    font-size: 18px;
+  }
+  .f24px{
+    font-size: 24px;
+  }
+  .f32px{
+    font-size: 32px;
+  }
+  .f26px {
+    font-size: 26px;
+  }
+  .f42px {
+    font-size: 42px;
+  }
+  .f45px {
+    font-size: 45px;
+  }
+}
+
+/* sp用 */
+
+@media screen and (max-width:400px) {
+  #f28px {
+    font-size: 24px;
+  }
+  #f33px {
+    font-size: 25px;
+  }
+  #f20px {
+    font-size: 16px;
+  }
+  #f15px {
+    font-size: 13px;
+  }
+}
+
+/* /フォントサイズ調整用メディアクエリ */
 
 /* header */
 
@@ -58,7 +130,6 @@ html {
     display: none;
   }
   .headh1 {
-    font-size: 18px;
     line-height: 2;
     letter-spacing: 0.12em;
     font-feature-settings: "palt" 1;
@@ -77,7 +148,7 @@ html {
 @media screen and (max-width:767px) {
   .section_midasi {
     width: 90%;
-    margin: 70px auto 0;
+    margin: 100px auto 0;
     text-align: center;
   }
   .secp {
@@ -91,6 +162,13 @@ html {
     font-size: 28px;
     letter-spacing: 0.06em;
   }
+  .huku {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .huku img {
+    width: 100%;
+  }
 }
 
 @media screen and (min-width:768px) {
@@ -102,16 +180,19 @@ html {
     text-align: center;
   }
   .sech1 {
-    font-size: 35px;
     font-weight: 300;
     letter-spacing: 0.06em;
     font-feature-settings: "palt" 1;
   }
-  .section_midasi img {
+  .huku {
+    width: 30%;
+    margin: 0 auto;
+  }
+  .huku img {
     margin-top: 20px;
+    width: 100%;
   }
   .secp {
-    font-size: 18px;
     letter-spacing: 0.12em;
     line-height: 2;
     font-feature-settings: "palt" 1;
@@ -140,13 +221,11 @@ html {
   }
   .slidemidasi_tall {
     position: absolute;
-    width: 120px;
     top: 0;
     left: 0;
   }
   .slidemidasi_short {
     position: absolute;
-    width: 135px;
     top: 0;
     right: 0;
   }
@@ -175,10 +254,10 @@ html {
     margin-top: 20px;
     line-height: 2;
     text-align: left;
+    font-size: 15px;
   }
   .price span {
     border-bottom: #000 solid 1px;
-    font-size: 15px;
     margin-right: 10px;
     font-feature-settings: "palt" 1;
     letter-spacing: 0.08em;
@@ -214,42 +293,38 @@ html {
     overflow: hidden;
     position: relative;
   }
-  .modelimg_tall img, .modelimg_short img {
+  .modelimg_tall img {
     margin: 0 auto;
     width: 100%;
+  }
+  .modelimg_short img {
+    width: 100%;
+    margin: 0 auto;
   }
   .modelimg_tall, .modelimg_short {
     position: relative;
   }
   .slidemidasi_tall {
     position: absolute;
-    width: 150px;
     top: 0;
     left: 0;
   }
   .slidemidasi_short {
     position: absolute;
-    width: 170px;
     top: 0;
     right: 0;
   }
   .tallmidasi, .shortmidasi {
-    font-size: 42px;
+    /* font-size: 42px; */
     border-bottom: #000 solid 2px;
   }
-  .cm {
-    font-size: 26px;
-  }
   .slidemidasi_tall .size {
-    font-size: 26px;
     text-align: left;
   }
   .slidemidasi_short .size_short {
-    font-size: 26px;
     text-align: right;
   }
   .setumei {
-    font-size: 18px;
     letter-spacing: 0.12em;
     font-feature-settings: "palt" 1;
     line-height: 2;
@@ -261,12 +336,69 @@ html {
   }
   .price span {
     border-bottom: #000 solid 1px;
-    font-size: 16px;
     margin-right: 10px;
   }
 }
 
 /* /section_model */
+
+/* ボタン */
+
+@media screen and (max-width:767px) {
+  .allitemcheck {
+    background-color: #fff;
+    margin: 100px auto 0;
+    display: block;
+    font-weight: 300;
+    width: 90%;
+    letter-spacing: 0.06em;
+    font-feature-settings: "palt" 1;
+    font-size: 15px;
+    line-height: 3;
+  }
+  .gotop {
+    display: none;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .allitemcheck {
+    background-color: #fff;
+    margin: 100px auto 0;
+    display: block;
+    font-weight: 300;
+    width: 90%;
+    letter-spacing: 0.06em;
+    font-feature-settings: "palt" 1;
+    line-height: 3;
+    cursor: pointer;
+  }
+  .gotop {
+    margin: 135px auto 600px;
+    width: 90%;
+  }
+  .gotopbutton {
+    text-align: center;
+    color: #000;
+    text-decoration: none;
+    border: #000 solid 2px;
+    margin: 0 auto;
+    display: block;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    font-feature-settings: "palt" 1;
+    line-height: 2;
+    font-family: 'Poppins', sans-serif;
+  }
+  .triangle {
+    margin-top: -100px;
+    border-style: solid;
+    border-width: 0 8.5px 15px 8.5px;
+    border-color: transparent transparent #000 transparent;
+  }
+}
+
+/* /ボタン */
 
 /* 調整用 */
 
@@ -281,6 +413,24 @@ html {
     margin-top: 20px;
   }
   .section4 .secp {
+    margin-top: 20px;
+  }
+  .sp_img21 {
+    margin-top: 20px;
+  }
+  .section5 .secp {
+    margin-top: 20px;
+  }
+  .sp_img26 {
+    margin-top: 20px;
+  }
+  .section6 .secp {
+    margin-top: 20px;
+  }
+  .sp_img31 {
+    margin-top: 20px;
+  }
+  .section7 .secp {
     margin-top: 20px;
   }
 }
