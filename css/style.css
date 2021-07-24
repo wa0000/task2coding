@@ -391,6 +391,7 @@ body {
     font-family: 'Poppins', sans-serif;
   }
   .triangle {
+    display: inline-block;
     margin-top: -100px;
     border-style: solid;
     border-width: 0 8.5px 15px 8.5px;
@@ -403,6 +404,9 @@ body {
 /* 調整用 */
 
 @media screen and (max-width:767px) {
+  .sp_img03 {
+    margin-top: 20px;
+  }
   .sp_img08 {
     margin-top: 20px;
   }
@@ -441,6 +445,15 @@ body {
   }
   .section4 .secp {
     margin-top: 40px;
+  }
+  .section5 .secp {
+    margin-top: 40px;
+  }
+  .section6 .secp {
+    margin-top: 40px;
+  }
+  .section7 .secp {
+    margin-top: 10px;
   }
 }
 
